@@ -1304,17 +1304,30 @@ padding: 15px 0;
         }
         
         /* Banner区域优化 */
+        .head,
+        .swiper-container,
+        .cf {
+            width: 100% !important;
+            overflow: hidden !important;
+        }
         .banner-word {
             margin-top: 30px !important;
             padding-top: 10px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
         }
         .banner-word-1st {
             font-size: 20px !important;
-            padding: 10px 15px !important;
+            padding: 10px 0 !important;
+            margin-top: 0 !important;
         }
         .cf .swiper-slide {
             background-size: cover !important;
+            background-position: center !important;
             height: 300px !important;
+        }
+        .banner_nav {
+            display: none !important;
         }
         
         /* 服务卡片优化 */
@@ -1419,23 +1432,52 @@ padding: 15px 0;
             font-size: 14px !important;
         }
         
-        /* 轮播导航优化 */
-        .banner_nav {
+        /* 解决方案区域优化 */
+        .solution .solution_in {
+            padding: 20px 15px !important;
+        }
+        .solution .solution_content {
+            flex-direction: column !important;
+        }
+        .solution .solution_content .left_nav {
             width: 100% !important;
-            left: 0 !important;
-            padding: 0 15px !important;
+            border-right: none !important;
+            border-bottom: 1px solid #e0e0e0 !important;
+            margin-bottom: 20px !important;
         }
-        .banner_nav ul {
-            position: relative !important;
-            bottom: auto !important;
-            right: auto !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
+        .solution .solution_content .right_content {
+            width: 100% !important;
         }
-        .banner_nav ul li {
-            margin: 5px !important;
-            font-size: 12px !important;
-            padding: 5px 10px !important;
+        
+        /* 特性区域优化 */
+        .features {
+            height: auto !important;
+            padding: 30px 15px !important;
+            background-size: cover !important;
+        }
+        .features_content_fir {
+            flex-direction: column !important;
+        }
+        .features_content_sec {
+            width: 100% !important;
+            margin-bottom: 15px !important;
+        }
+        
+        /* 统计数据区域优化 */
+        .cumulative-wrap {
+            margin-top: 30px !important;
+            padding-bottom: 30px !important;
+        }
+        .cumulative-cont {
+            padding: 30px 15px !important;
+        }
+        .index-cumulative {
+            flex-direction: column !important;
+            gap: 20px !important;
+        }
+        .index-cumulative > h1 {
+            flex-direction: column !important;
+            gap: 15px !important;
         }
     }
     
