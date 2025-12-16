@@ -1,12 +1,7 @@
 // 等待 DOM 加载完成
 document.addEventListener('DOMContentLoaded', function() {
-    // 显示当前配置的 URL
-    if (typeof TARGET_URL !== 'undefined') {
-        const configDisplay = document.getElementById('config-url-display');
-        if (configDisplay) {
-            configDisplay.textContent = TARGET_URL;
-        }
-    } else {
+    // 检查配置
+    if (typeof TARGET_URL === 'undefined') {
         console.error('TARGET_URL 未定义，请检查 config.js 文件');
     }
 
