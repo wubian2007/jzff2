@@ -1649,11 +1649,37 @@ padding: 15px 0;
             box-sizing: border-box !important;
         }
         
-        /* 底部优化 */
+        /* 底部优化 - 移动端 */
         .foot {
             width: 100% !important;
             max-width: 100% !important;
             box-sizing: border-box !important;
+            background: #1a1d29 !important;
+            padding: 20px 15px !important;
+        }
+        .foot-in {
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .foot-in > div:first-child {
+            margin-bottom: 15px !important;
+            font-size: 12px !important;
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+        .foot-in > div:last-child {
+            flex-direction: column !important;
+            gap: 10px !important;
+            align-items: center !important;
+        }
+        .foot-in img {
+            margin: 0 auto 8px !important;
+            display: block !important;
+        }
+        .foot-in a {
+            color: rgba(255, 255, 255, 0.7) !important;
+            font-size: 12px !important;
+            line-height: 1.6 !important;
+            text-align: center !important;
         }
         
         /* 确保所有表格和列表不超出 */
@@ -1674,31 +1700,79 @@ padding: 15px 0;
             padding-bottom: 20px !important;
         }
         .cumulative-cont {
-            padding: 20px 15px !important;
+            padding: 30px 15px !important;
         }
         .index-cumulative {
             flex-direction: row !important;
             flex-wrap: wrap !important;
-            gap: 15px !important;
+            gap: 20px !important;
             justify-content: space-around !important;
         }
         .index-cumulative > h1 {
             flex-direction: row !important;
             flex-wrap: wrap !important;
-            gap: 15px !important;
+            gap: 20px !important;
             justify-content: space-around !important;
             width: 100% !important;
         }
         .index-cumulative > h1 > span {
-            flex: 0 0 calc(50% - 8px) !important;
+            flex: 0 0 calc(50% - 10px) !important;
             text-align: center !important;
-            margin-bottom: 10px !important;
+            margin-bottom: 15px !important;
+            padding: 15px 10px !important;
+            background: rgba(255, 255, 255, 0.05) !important;
+            border-radius: 8px !important;
         }
         .index-cumulative .num {
-            font-size: clamp(28px, 7vw, 50px) !important;
+            font-size: clamp(32px, 8vw, 56px) !important;
+            font-weight: bold !important;
+            color: #304DD9 !important;
+            display: block !important;
+            margin-bottom: 8px !important;
         }
         .index-cumulative .text {
-            font-size: clamp(11px, 2.5vw, 14px) !important;
+            font-size: clamp(12px, 3vw, 16px) !important;
+            color: #303659 !important;
+            line-height: 1.5 !important;
+        }
+        
+        /* 红色横幅区域优化 - 移动端 */
+        .index-cumulative-wrap {
+            margin-top: 30px !important;
+        }
+        .index-cumulative.index-common {
+            background: #ff501a !important;
+            border-radius: 0 !important;
+            padding: 25px 15px !important;
+            margin: 0 !important;
+        }
+        .index-cumulative.index-common > h1 {
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+            gap: 20px !important;
+        }
+        .index-cumulative.index-common > h1 > p {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+        .index-cumulative.index-common > h1 > p > span {
+            font-size: clamp(16px, 4vw, 20px) !important;
+            color: #ffffff !important;
+            line-height: 1.6 !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .index-cumulative.index-common > h1 > a > button {
+            width: 80% !important;
+            max-width: 200px !important;
+            margin: 0 !important;
+            padding: 12px 30px !important;
+            font-size: clamp(14px, 3.5vw, 18px) !important;
+            background: rgba(255, 255, 255, 0.2) !important;
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.5) !important;
+            border-radius: 25px !important;
         }
         
         /* 解决方案区域优化 */
@@ -2265,7 +2339,7 @@ padding: 15px 0;
       <div class="index-cumulative index-common">
         <h1>
           <p>
-            <span>现在注册，试用桔子分发产品服务，还能免费领取分发奖励</span>
+            <span>仅需一步,立即体验桔子分发带来的高效与便捷</span>
           </p>
           <a href="/index/reg" data-link><button style="margin-left: -369px" class="borderColor4" onclick="location.href='/index/reg'" data-link>立即注册</button></a>
         </h1>
