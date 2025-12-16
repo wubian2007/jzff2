@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="桔子分发 - 专业的应用分发平台">
+    <meta name="keywords" content="应用分发,APP下载,应用商店">
+    <title>桔子分发 - 专业的应用分发平台</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 配置提示栏（显眼位置，方便修改） -->
+    <div class="config-banner">
+        <div class="container">
+            <div class="config-info">
+                <span class="config-icon">⚙️</span>
+                <span class="config-label">跳转链接配置：</span>
+                <code id="config-url-display" class="config-url">https://www.baidu.com</code>
+                <span class="config-hint">（修改 <strong>js/config.js</strong> 中的 <strong>TARGET_URL</strong> 即可更改所有跳转）</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo区域 -->
+                <div class="logo-section">
+                    <a href="#" class="logo-link" data-link>
+                        <img src="assets/logo.png" alt="桔子分发" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="logo-text" style="display:none;">桔子分发</span>
+                    </a>
+                    <h1 class="site-title">桔子分发</h1>
+                </div>
+
+                <!-- 主导航 -->
+                <nav class="main-nav">
+                    <a href="#" class="nav-item active" data-link>首页</a>
+                    <a href="#" class="nav-item" data-link>应用</a>
+                    <a href="#" class="nav-item" data-link>游戏</a>
+                    <a href="#" class="nav-item" data-link>分类</a>
+                    <a href="#" class="nav-item" data-link>排行榜</a>
+                    <a href="#" class="nav-item" data-link>资讯</a>
+                </nav>
+
+                <!-- 搜索框 -->
+                <div class="search-box">
+                    <input type="text" placeholder="搜索应用..." class="search-input">
+                    <button class="search-btn" data-link>搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- Banner轮播区域 -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-slider">
+                    <div class="banner-item active">
+                        <div class="banner-content">
+                            <h2 class="banner-title">发现优质应用</h2>
+                            <p class="banner-desc">海量精选应用，一键轻松下载</p>
+                            <button class="banner-btn" data-link>立即体验</button>
+                        </div>
+                        <div class="banner-image">
+                            <img src="assets/images/banner1.jpg" alt="Banner" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门推荐 -->
+        <section class="section hot-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">🔥</span>
+                        热门推荐
+                    </h2>
+                    <a href="#" class="more-link" data-link>更多 ></a>
+                </div>
+                <div class="app-list">
+                    <div class="app-item" data-link>
+                        <div class="app-icon-wrapper">
+                            <img src="assets/images/app1.png" alt="应用图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23667eea%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3EAPP%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <div class="app-info">
+                            <h3 class="app-name">应用名称</h3>
+                            <p class="app-desc">应用描述信息，这里显示应用的简要介绍</p>
+                            <div class="app-meta">
+                                <span class="app-size">大小: 50MB</span>
+                                <span class="app-version">版本: 1.0.0</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" data-link>下载</button>
+                    </div>
+                    <div class="app-item" data-link>
+                        <div class="app-icon-wrapper">
+                            <img src="assets/images/app2.png" alt="应用图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23667eea%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3EAPP%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <div class="app-info">
+                            <h3 class="app-name">应用名称</h3>
+                            <p class="app-desc">应用描述信息，这里显示应用的简要介绍</p>
+                            <div class="app-meta">
+                                <span class="app-size">大小: 50MB</span>
+                                <span class="app-version">版本: 1.0.0</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" data-link>下载</button>
+                    </div>
+                    <div class="app-item" data-link>
+                        <div class="app-icon-wrapper">
+                            <img src="assets/images/app3.png" alt="应用图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23667eea%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3EAPP%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <div class="app-info">
+                            <h3 class="app-name">应用名称</h3>
+                            <p class="app-desc">应用描述信息，这里显示应用的简要介绍</p>
+                            <div class="app-meta">
+                                <span class="app-size">大小: 50MB</span>
+                                <span class="app-version">版本: 1.0.0</span>
+                            </div>
+                        </div>
+                        <button class="download-btn" data-link>下载</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏专区 -->
+        <section class="section game-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">🎮</span>
+                        游戏专区
+                    </h2>
+                    <a href="#" class="more-link" data-link>更多 ></a>
+                </div>
+                <div class="app-grid">
+                    <div class="app-card" data-link>
+                        <div class="card-icon">
+                            <img src="assets/images/game1.png" alt="游戏图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23764ba2%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3E游戏%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <h3 class="card-title">游戏名称</h3>
+                        <p class="card-desc">游戏描述信息</p>
+                        <div class="card-meta">
+                            <span>大小: 100MB</span>
+                            <span>下载: 1.2万</span>
+                        </div>
+                        <button class="card-btn" data-link>立即下载</button>
+                    </div>
+                    <div class="app-card" data-link>
+                        <div class="card-icon">
+                            <img src="assets/images/game2.png" alt="游戏图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23764ba2%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3E游戏%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <h3 class="card-title">游戏名称</h3>
+                        <p class="card-desc">游戏描述信息</p>
+                        <div class="card-meta">
+                            <span>大小: 100MB</span>
+                            <span>下载: 1.2万</span>
+                        </div>
+                        <button class="card-btn" data-link>立即下载</button>
+                    </div>
+                    <div class="app-card" data-link>
+                        <div class="card-icon">
+                            <img src="assets/images/game3.png" alt="游戏图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23764ba2%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3E游戏%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <h3 class="card-title">游戏名称</h3>
+                        <p class="card-desc">游戏描述信息</p>
+                        <div class="card-meta">
+                            <span>大小: 100MB</span>
+                            <span>下载: 1.2万</span>
+                        </div>
+                        <button class="card-btn" data-link>立即下载</button>
+                    </div>
+                    <div class="app-card" data-link>
+                        <div class="card-icon">
+                            <img src="assets/images/game4.png" alt="游戏图标" class="app-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23764ba2%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22%3E游戏%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <h3 class="card-title">游戏名称</h3>
+                        <p class="card-desc">游戏描述信息</p>
+                        <div class="card-meta">
+                            <span>大小: 100MB</span>
+                            <span>下载: 1.2万</span>
+                        </div>
+                        <button class="card-btn" data-link>立即下载</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用分类 -->
+        <section class="section category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">📱</span>
+                        应用分类
+                    </h2>
+                </div>
+                <div class="category-grid">
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">📖</div>
+                        <span class="category-name">阅读</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">🎵</div>
+                        <span class="category-name">音乐</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">📹</div>
+                        <span class="category-name">视频</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">🛒</div>
+                        <span class="category-name">购物</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">💼</div>
+                        <span class="category-name">办公</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">🎨</div>
+                        <span class="category-name">设计</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">🏃</div>
+                        <span class="category-name">运动</span>
+                    </a>
+                    <a href="#" class="category-item" data-link>
+                        <div class="category-icon">🍔</div>
+                        <span class="category-name">生活</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">关于我们</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-link>公司介绍</a></li>
+                        <li><a href="#" data-link>联系我们</a></li>
+                        <li><a href="#" data-link>加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">帮助中心</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-link>使用帮助</a></li>
+                        <li><a href="#" data-link>常见问题</a></li>
+                        <li><a href="#" data-link>意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">友情链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-link>合作伙伴</a></li>
+                        <li><a href="#" data-link>相关网站</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 桔子分发 版权所有
+                </p>
+                <p class="icp">
+                    长沙静腾教育咨询有限公司河北分公司 琼ICP备2025055238号
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入脚本 -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
