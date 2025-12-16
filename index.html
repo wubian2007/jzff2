@@ -103,7 +103,8 @@ p, span, a {
     padding-top: 16px;
 }
 .banner-word-btn{
-    width: 76px;
+    min-width: 76px;
+    width: auto;
     height: 48px;
     margin-top: 42px;
     display: inline-block;
@@ -113,9 +114,13 @@ p, span, a {
     cursor: pointer;
     background: rgba(255,255,255,.1);
     line-height: 48px;
-    padding: 1px 30px;
+    padding: 0 30px;
     text-align: center;
     margin-right: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .cf .swiper-slide{
     background-position: center center;
@@ -1417,8 +1422,11 @@ padding: 15px 0;
             margin-top: 30px !important;
             padding: 20px 15px !important;
             width: 100% !important;
+            max-width: 100% !important;
             box-sizing: border-box !important;
             line-height: 1.8 !important;
+            overflow: hidden !important;
+            word-wrap: break-word !important;
         }
         .banner-word p {
             margin-bottom: 12px !important;
@@ -2216,16 +2224,18 @@ padding: 15px 0;
     <div class="swiper-wrapper cf">
         <div class="swiper-slide imgone" style="height:610px;background-color: rgb(85, 65, 192); background-size: 100% 100% !important; background-image: url(&quot;assets/images/index_bg.jpg&quot;);">
 
-            <div style="width: 1100px;margin: 0 auto;position: relative" class="clearfix" id="banner-container">
+            <div style="width: 1100px;margin: 0 auto;position: relative;box-sizing: border-box;overflow: hidden;" class="clearfix" id="banner-container">
 
-                <div class="banner-word">
+                <div class="banner-word" style="box-sizing: border-box;overflow: hidden;">
                     <p class="banner-word-1st">桔子分发 应用内测分发</p>
                     <p class="banner-word-2nd"><span></span>一键上传安装包，免费获取下载链接和二维码，支持安卓苹果应用合并</p>
                     <p class="banner-word-3rd"><span></span>7种模板，多个语言供选择</p>
                     <p class="banner-word-3rd"><span></span>苹果，安卓，分发，一键封装,简单快捷</p>
                     
-                    <div class="banner-word-btn" style="background: #ffffff; color: #2919b1 !important; font-weight: bold;border: 1px solid #ffffff;" onclick="location.href='/index/internal'">免费体验</div>
-                    <div class="banner-word-btn" style="background: rgba(255,255,255,0.10); color: #ffffff; border: 1px solid #ffffff;"onclick="location.href='/index/reg'">立即注册</div>
+                    <div style="box-sizing: border-box;overflow: hidden;display: flex;flex-wrap: wrap;gap: 15px;margin-top: 25px;">
+                        <div class="banner-word-btn" style="background: #ffffff; color: #2919b1 !important; font-weight: bold;border: 1px solid #ffffff;box-sizing: border-box;" onclick="location.href='/index/internal'">免费体验</div>
+                        <div class="banner-word-btn" style="background: rgba(255,255,255,0.10); color: #ffffff; border: 1px solid #ffffff;box-sizing: border-box;"onclick="location.href='/index/reg'">立即注册</div>
+                    </div>
                 </div>
                 <div class="banner_img" style="">
                     <img src="assets/images/1630031131826_97fc5ef1210c42e6a3c97cf67ba1adfd.png" style="" alt="">
