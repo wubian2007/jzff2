@@ -616,6 +616,15 @@ p, span, a {
     text-align: center;
     display: inline-block;
     margin: 10px 9px;
+    box-sizing: border-box;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+.serviceClass li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .serviceClass .title{
     width: 100%;
@@ -623,24 +632,40 @@ p, span, a {
     text-align: center;
     color: #ffffff;
     box-sizing: border-box;
-    border-radius: 6px 6px 0 0 ;
+    border-radius: 6px 6px 0 0;
+    flex-shrink: 0;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .serviceClass .title h5{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 8px;
+    line-height: 1.2;
+    min-height: 22px;
+}
+.serviceClass .title p{
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 20px;
 }
 .serviceClass img{
     width: 96px;
     height: 96px;
     margin: 30px auto;
     display: block;
+    flex-shrink: 0;
 }
 .serviceClass button{
     width: 80%;
     height: 40px;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0 auto 20px;
+    flex-shrink: 0;
 }
 .templateAll{
     width: 1100px;
