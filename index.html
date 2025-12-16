@@ -1415,24 +1415,69 @@ padding: 15px 0;
         }
         .banner-word {
             margin-top: 30px !important;
-            padding-top: 10px !important;
-            padding-left: 15px !important;
-            padding-right: 15px !important;
+            padding: 20px 15px !important;
             width: 100% !important;
             box-sizing: border-box !important;
+            line-height: 1.8 !important;
+        }
+        .banner-word p {
+            margin-bottom: 12px !important;
+            line-height: 1.6 !important;
         }
         .banner-word-1st {
-            font-size: clamp(18px, 4.5vw, 30px) !important;
-            padding: 10px 0 !important;
+            font-size: clamp(20px, 5vw, 32px) !important;
+            font-weight: bold !important;
+            padding: 15px 0 !important;
             margin-top: 0 !important;
+            margin-bottom: 20px !important;
             width: 100% !important;
             box-sizing: border-box !important;
+            line-height: 1.4 !important;
+            letter-spacing: 1px !important;
+        }
+        .banner-word-2nd {
+            font-size: clamp(14px, 3.5vw, 18px) !important;
+            padding: 8px 0 !important;
+            margin-bottom: 12px !important;
+            line-height: 1.7 !important;
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+        .banner-word-3rd {
+            font-size: clamp(13px, 3vw, 16px) !important;
+            padding: 6px 0 !important;
+            margin-bottom: 10px !important;
+            line-height: 1.6 !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        .banner-word-btn {
+            margin-top: 25px !important;
+            margin-bottom: 10px !important;
+            margin-right: 15px !important;
+            padding: 12px 25px !important;
+            font-size: clamp(14px, 3.5vw, 18px) !important;
+            min-height: 44px !important;
+            line-height: 1.2 !important;
         }
         .cf .swiper-slide {
             background-size: cover !important;
             background-position: center !important;
-            height: clamp(250px, 50vh, 400px) !important;
+            height: auto !important;
+            min-height: clamp(400px, 70vh, 600px) !important;
             width: 100% !important;
+            padding: 20px 0 !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        .cf .swiper-slide .clearfix,
+        #banner-container {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 15px !important;
+            box-sizing: border-box !important;
+            margin: 0 !important;
+        }
+        .banner_img {
+            display: none !important;
         }
         .banner_nav {
             display: none !important;
@@ -2011,7 +2056,7 @@ padding: 15px 0;
     <div class="swiper-wrapper cf">
         <div class="swiper-slide imgone" style="height:610px;background-color: rgb(85, 65, 192); background-size: 100% 100% !important; background-image: url(&quot;assets/images/index_bg.jpg&quot;);">
 
-            <div style="width: 1100px;margin: 0 auto;position: relative" class="clearfix">
+            <div style="width: 1100px;margin: 0 auto;position: relative" class="clearfix" id="banner-container">
 
                 <div class="banner-word">
                     <p class="banner-word-1st">桔子分发 应用内测分发</p>
