@@ -1421,9 +1421,9 @@ padding: 15px 0;
 </style>
 
 
-<link rel="stylesheet" href="/xinmoban/xd/echatWeb.css">
-<link rel="stylesheet" href="/xinmoban/xd/drop.css">
-<link rel="stylesheet" href="/xinmoban/xd/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/vendor/echatWeb.css">
+<link rel="stylesheet" href="css/vendor/drop.css">
+<link rel="stylesheet" href="https://www.appzhu.cn/xinmoban/xd/font-awesome-4.7.0/css/font-awesome.min.css">
 <!----手机导航---->
 <header>
     
@@ -1653,7 +1653,7 @@ padding: 15px 0;
     </div>
 </div>
 </div>
-<script type="text/javascript" src="/xinmoban/xd/top.js"></script>
+<script type="text/javascript" src="js/vendor/top.js"></script>
 
 </header>
 <div id="allBody">
@@ -2034,7 +2034,7 @@ padding: 15px 0;
     </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="回顶部" data-link>返回顶部</button>
-<script src="/static/index/js/clipboard.min.js"></script>
+<script src="js/vendor/clipboard.min.js"></script>
 <script language=javascript> 
 function openScript(url, width, height) {
         var Win = window.open(url,"openScript",'width=' + width + ',height=' + 
@@ -2146,9 +2146,24 @@ function topFunction() {
     }
 </script>
   
-<script src="/pages/js/jquery.min.js"></script>
+<script src="js/vendor/jquery.min.js"></script>
 <script>
+    // 移动端菜单控制函数
+    function CloseMenu() {
+        $('.echat-phone-menu').removeClass('show');
+        $('.menu-motai').fadeOut();
+    }
+    function OpenMenu() {
+        $('.echat-phone-menu').addClass('show');
+        $('.menu-motai').fadeIn();
+    }
+    
     $(function(){
+        // 移动端菜单点击事件
+        $('.menu-motai').on('click', function() {
+            CloseMenu();
+        });
+        
         $(window).scroll(function(){
             if($(document).scrollTop() > 0){
                 $('#ym_header_nav_list').addClass('navtop')

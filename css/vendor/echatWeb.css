@@ -1,0 +1,1952 @@
+@font-face {
+    font-family: 'iconfontt';
+    /* project id 1018932 */
+    src: url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.eot');
+    src: url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.woff2') format('woff2'), url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.woff') format('woff'), url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.ttf') format('truetype'), url('https://at.alicdn.com/t/font_1018932_hnu7tfe227.svg#iconfontt') format('svg');
+}
+
+.iconfontt {
+    font-family: "iconfontt" !important;
+    font-size: 21px !important;
+    font-style: normal;
+    color: #fff;
+    padding: 0px 10px;
+    background: #e94620;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.iconfontt {
+    font-family: "iconfontt" !important;
+    font-size: 21px !important;
+    font-style: normal;
+    color: #fff;
+    padding: 0px 10px;
+    background: #e94620;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-18 {
+    font-size: 18px !important;
+    color: #f76d2b;
+    padding: 0;
+    background: none;
+}
+
+.icon-12 {
+    font-size: 12px !important;
+    background: none;
+    color: #f76d2b;
+}
+
+.icon-40 {
+    font-size: 40px !important;
+    color: #fff;
+    padding: 0;
+    background: none;
+}
+
+.icon-white {
+    font-size: 30px !important;
+    color: #fff;
+    padding: 0;
+    background: none;
+}
+
+.icon-contact {
+    background: none;
+    color: #f76d2b;
+}
+
+.menu_a_click {
+    /*border-bottom: 1px solid #f76d2b;*/
+}
+a:hover {
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+.icon-plan {
+    display: inline-block;
+    font-size: 24px !important;
+    padding: 8px 18px;
+    background: #fff;
+    color: #f76d2b;
+    vertical-align: top;
+    float: right;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+.navbar-header {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 6px;
+    right: 20px;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+.echat-nav-bar {
+    /* background-color: #f76d2b; */
+    fill: #f76d2b;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+    float: right;
+    margin-right: -15px;
+    text-align: center;
+}
+
+.fixed-menu-phone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    display: none;
+    /* -webkit-transform: translateZ(0); */
+}
+
+/* 右侧固定联系方式 */
+
+.echat-b-contact {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    z-index: 100001;
+}
+
+.echat-b-contact ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #f76d2b;
+    border-right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .15);
+}
+
+.echat-b-contact ul li {
+    color: #f76d2b;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+}
+
+.echat-b-contact ul li:hover .echat-b-content, .echat-b-contact ul li:hover a {
+    background: #f76d2b;
+    color: #fff;
+}
+
+.echat-b-contact ul li:hover .icon-contact {
+    color: #fff;
+}
+
+.echat-b-contact ul li a {
+    text-decoration: none;
+    color: #f76d2b;
+}
+
+.border-top {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 30px;
+    height: 1px;
+    background: #f76d2b;
+}
+
+.echat-b-content {
+    position: relative;
+    z-index: 300;
+    padding: 15px;
+    background: #fff;
+}
+
+.echat-contact-tip {
+    position: absolute;
+    top: -15px;
+    right: -1000%;
+    z-index: 200;
+    width: 150px;
+    padding: 15px;
+    text-align: left;
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+.echat-contact-tip2 {
+    position: absolute;
+    top: 10px;
+    right: -1000%;
+    z-index: 200;
+    padding: 15px;
+    text-align: left;
+    transition: all 0.4s;
+    white-space: nowrap;
+}
+
+.echat-contact-wechat {
+    position: absolute;
+    top: -100px;
+    right: -1000%;
+    z-index: 200;
+    width: 200px;
+    padding-right: 15px;
+    text-align: left;
+    transition: all 0.4s;
+}
+
+.echat-contact-wechat img {
+    max-width: 100%;
+}
+
+.echat-contact-tip-content {
+    background: #fff;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .15);
+    color: #555 !important;
+}
+
+.echat-contact-tip-content span {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.echat-contact-tip2 .echat-contact-tip-content {
+    color: #fff !important;
+    background: #f76d2b;
+}
+
+.echat-contact-tip-content span:hover {
+    color: #f76d2b !important;
+}
+
+.echat-contact-tip-top {
+    background: #f76d2b;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.echat-contact-show:hover .echat-contact-tip, .echat-contact-show:hover .echat-contact-wechat, .echat-contact-show:hover .echat-contact-tip2 {
+    right: 100%;
+}
+
+.echat-num {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px !important;
+    background: red;
+    color: #fff;
+    display: none;
+}
+
+.year-time a {
+    color: #888888;
+    text-decoration: none;
+}
+
+/* 768屏宽以上 */
+
+@media screen and ( min-width:769px) {
+    .echat-b-contact-phone {
+        display: none;
+    }
+    .echat-nav-bar {
+        display: none;
+    }
+    .echat-target {
+        display: none;
+    }
+    /* .b-nav__list {
+        display: block;
+    } */
+    .echat-login {
+        display: block;
+    }
+    .b-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        background: #fff;
+        max-height: 150px;
+        padding: 0;
+        transition: top 1s;
+        -webkit-transition: top 0.5s;
+    }
+    .b-nav-shadow {
+        box-shadow: 0 5px 5px -2px rgb(0, 0, 0, 0.12);
+    }
+    .b-nav-hide {
+        top: -120px;
+        transition: top 0.5s;
+        -webkit-transition: top 0.5s;
+        box-shadow: none;
+    }
+    .echat-banner {
+        margin-top: 120px;
+    }
+    /*  */
+    .echat-login {
+        display: block;
+    }
+    .echat-channel {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .echat-channel div {
+        width: 10%;
+        float: left\0;
+    }
+    .icon-channel {
+        color: #ccc;
+        background: #fff;
+        font-size: 40px !important;
+    }
+    .icon-channel-play {
+        color: #ededed;
+        font-size: 40px !important;
+        background: none;
+    }
+    .icon-channel-mini {
+        font-size: 12px !important;
+        color: #ededed;
+        background: none;
+    }
+    .echat-play {
+        width: 100%;
+        height: 380px;
+        position: relative;
+        overflow: hidden;
+        /* border: 1px solid #ddd; */
+        border-top: 1px solid #ddd;
+    }
+    .echat-play-left {
+        display: block;
+        float: left;
+        width: 350px;
+        height: 760px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .echat-play-left li {
+        width: 100%;
+        height: 76px;
+        text-align: center;
+        line-height: 76px;
+        float: left;
+        position: relative;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: top 0.3s ease-out;
+        -webkit-transition: top 0.3s ease-out;
+        -o-transition: top 0.3s ease-out;
+        -moz-transition: top 0.3s ease-out;
+    }
+    .echat-play-left .ll-1 {
+        z-index: 2;
+        top: 152px;
+    }
+    .echat-play-left .ll-2 {
+        z-index: 3;
+        /* top: 76px; */
+        top: 228px;
+    }
+    .echat-play-left .ll-3 {
+        z-index: 4;
+        /* top: 152px; */
+        top: 304px;
+    }
+    .echat-play-left .ll-4 {
+        z-index: 3;
+        /* top: 228px; */
+        top: 380px;
+    }
+    .echat-play-left .ll-5 {
+        z-index: 2;
+        /* top: 304px; */
+        top: 456px;
+    }
+    .echat-play-left .ll-6 {
+        z-index: 1;
+        /* top: 380px; */
+        top: 532px;
+    }
+    .echat-play-left .ll-7 {
+        z-index: 1;
+        /* top: 456px; */
+        top: 608px;
+    }
+    .echat-play-left .ll-8 {
+        z-index: 1;
+        /* top: 532px; */
+        top: 0;
+    }
+    .echat-play-left .ll-9 {
+        z-index: 1;
+        /* top: 608px; */
+        top: 76px;
+    }
+    .echat-play-left .ll-10 {
+        z-index: 1;
+        top: 684px;
+        /* top: 0;
+        display: none; */
+    }
+    .echat-play-left li div {
+        position: relative;
+        float: left;
+    }
+    .mo {
+        position: absolute;
+        top: 152px;
+        left: 0;
+        width: 350px;
+        height: 76px;
+        background: #f76d2b;
+        box-shadow: 0 0 7px 1px #f59161;
+        display: none;
+    }
+    .echat-play-left .channel-this {
+        box-sizing: border-box;
+        animation: channel 0.3s linear 0.3s;
+        animation-fill-mode: forwards;
+        padding-left: 20px;
+        background: #f76d2b\0;
+    }
+    .channel-this span {
+        color: #fff !important;
+    }
+    .channel-this .roll1, .channel-this .roll2 {
+        background: #fbfbfb;
+    }
+    .channel-this p {
+        white-space: nowrap;
+    }
+    .channel-this:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 76px;
+        background: #f76d2b;
+        animation: channel 0.3s ease 0.3s;
+        -webkit-animation: channel 0.3s ease 0.3s;
+        -ms-animation: channel 0.3s ease 0.3s;
+        -o-animation: channel 0.3s ease 0.3s;
+        -moz-animation: channel 0.3s ease 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    .echat-play-right-container {
+        width: calc(100% - 350px);
+        height: 380px;
+        position: absolute;
+        top: 0;
+        left: 350px;
+        overflow: hidden;
+    }
+    .echat-play-right {
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 380px;
+    }
+    .echat-play-right li {
+        width: 100%;
+        height: 380px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background: #fff;
+        transition: left 0.5s ease-in;
+    }
+    .echat-play-right .lr-3 {
+        left: 0%;
+        z-index: 10;
+    }
+    .lr-3-mo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        left: 100%\0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        -webkit-animation: lr3 0.6s ease 0.7s;
+        -o-animation: lr3 0.6s ease 0.7s;
+        -moz-animation: lr3 0.6s ease 0.7s;
+        animation: lr3 0.6s ease 0.7s;
+        /* -ms-animation: lr3 0.6s ease 0.7s; */
+        animation-fill-mode: forwards;
+        z-index: 999;
+    }
+
+    .plan-active {
+        color: #e94620;
+    }
+    .roll1, .roll2 {
+        display: inline-block;
+        width: 106px;
+        height: 10px;
+        background: #ededed;
+        border-radius: 5px;
+    }
+    .roll2 {
+        width: 212px;
+        margin-left: 10px;
+    }
+    .time {
+        position: absolute;
+        top: 10px;
+        right: -36px;
+        color: #ededed;
+    }
+    .icon-div {
+        padding: 20px 0;
+        line-height: 14px;
+        text-align: left;
+        color: #ededed;
+        font-size: 12px;
+        position: relative;
+    }
+    .echat-play-right-2 {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .echat-play-right-1 {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        font-size: 12px;
+        border-left: 1px solid #ddd;
+    }
+    .echat-play-tip {
+        position: absolute;
+        top: 30px;
+        left: 66px;
+        background: #f76d2b;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .echat-play-right-1-div {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .echat-banner-triangle-1 {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 8px solid #f76d2b;
+        border-bottom: 4px solid transparent;
+        border-left: 12px solid transparent;
+        top: 0;
+        left: -7px;
+    }
+    .echat-tuwen {
+        width: 280px;
+        height: 173px;
+        text-align: left;
+        background: #f76d2b;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 0;
+        margin: 30px auto;
+    }
+    .echat-tuwen img {
+        vertical-align: top;
+    }
+    .tuwen-content {
+        width: calc(100% - 100px);
+        font-size: 12px;
+        display: inline-block;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .tuwen-content p {
+        color: rgb(137, 137, 137);
+        margin: 0;
+    }
+    .tuwen-bottom {
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+    /* .tuwen-top {
+        top: 100px;
+    } */
+    .tuwen-bottom>div {
+        background: #eaeaea;
+        border-radius: 3px;
+        position: relative;
+        padding: 5px 10px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 5px;
+        max-width: calc(100% - 66px);
+    }
+    .echat-banner-triangle-2 {
+        width: 0;
+        height: 0;
+        border: 6px solid #eaeaea;
+        position: absolute;
+        bottom: 0px;
+        right: -9px;
+        border-right: 6px solid transparent;
+        border-top: 6px solid transparent;
+    }
+    /* 渠道title */
+    .b-search__main-title h2:nth-child(1) {
+        display: block;
+    }
+    .b-search__main-title h2:nth-child(2) {
+        display: none;
+    }
+    .echat-channel-email {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #ccc;
+        margin-left: 5px;
+    }
+    .echat-channel-email:nth-child(1) {
+        margin-left: 0;
+    }
+    .plan-list {
+        display: inline-block;
+       width: calc(100% - -45px);
+    }
+    /* 顶部bannerpc端时，显示了解更多标签 */
+    .btn.btn-banner {
+        display: inline-block !important;
+    }
+    .btn-banner-p {
+        display: none;
+    }
+    .btn-banner-c {
+        display: block;
+    }
+    .echat-top-banner {
+        padding-top: 0;
+    }
+    .echat-top-banner>img {
+        display: block;
+    }
+}
+
+/* 1280屏宽以上 */
+
+@media screen and (min-width:1280px) {
+    .roll3 {
+        display: inline-block;
+        width: 80px;
+        height: 12px;
+        background: #ededed;
+    }
+    .echat-play-right-top {
+        height: 130px;
+        padding: 15px 12px;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .echat-play-right-2 {
+        width: 280px;
+        height: 100%;
+        float: left;
+        font-size: 12px;
+        text-align: left;
+        border-left: 1px solid #ddd;
+    }
+    .echat-play-right-1 {
+        width: calc(100% - 280px);
+        height: 100%;
+        position: relative;
+        float: left;
+        font-size: 12px;
+    }
+    .echat-play-right-1-div {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .echat-play-right-1-div span {
+        float: left;
+    }
+ .dropdown {
+     border-radius: 10px;
+    margin-top: 0px;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    /* height: 300px; */
+    width: 50%;
+    background: #fff;
+    z-index: 999999;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 13%);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    opacity: 0;
+    transition: transform, opacity 0.3s, 0.2s;
+    -webkit-animation: transform, opacity 0.3s, 0.2s;
+    -moz-transition: transform, opacity 0.3s, 0.2s;
+    -o-transition: transform, opacity 0.3s, 0.2s;
+}
+    .dropdownnn {
+        margin-top: 0px;
+        position: absolute;
+        top: 100%;
+        left: -20%;
+        /* height: 300px; */
+        width: 120%;
+        background: #fff;
+        z-index: 999999;
+        padding: 40px;
+        box-sizing: border-box;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .13);
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        opacity: 0;
+        transition: transform, opacity 0.3s, 0.2s;
+        -webkit-animation: transform, opacity 0.3s, 0.2s;
+        -moz-transition: transform, opacity 0.3s, 0.2s;
+        -o-transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdown-show {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        opacity: 1.0;
+        transition: transform, opacity 0.3s, 0.2s;
+        -webkit-animation: transform, opacity 0.3s, 0.2s;
+        -moz-transition: transform, opacity 0.3s, 0.2s;
+        -o-transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdownnn-show {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        opacity: 1.0;
+        transition: transform, opacity 0.3s, 0.2s;
+        -webkit-animation: transform, opacity 0.3s, 0.2s;
+        -moz-transition: transform, opacity 0.3s, 0.2s;
+        -o-transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdown-content {
+        width: 100%;
+        display: -moz-box;
+        /* Firefox */
+        display: -ms-flexbox;
+        /* IE10 */
+        display: -webkit-box;
+        /* Safari */
+        display: -webkit-flex;
+        /* Chrome, WebKit */
+        display: box;
+        display: flexbox;
+        display: flex;
+        flex-direction: row;
+    }
+    .dropdownnn-content {
+        width: 100%;
+        display: -moz-box;
+        /* Firefox */
+        display: -ms-flexbox;
+        /* IE10 */
+        display: -webkit-box;
+        /* Safari */
+        display: -webkit-flex;
+        /* Chrome, WebKit */
+        display: box;
+        display: flexbox;
+        display: flex;
+        flex-direction: row;
+    }
+    .column {
+        width: 37%;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    .column2 .column {
+        margin-left: 2%;
+        width: 31%;
+        float: left;
+    }
+    .block-link {
+        display: block;
+        color: #3d5154;
+        width: 100%;
+        /* height: 150px; */
+        background: #fafafa;
+        position: relative;
+        padding: 20px 12px 10px 12px !important;
+        /* border-radius: 3px; */
+        border-left: 3px solid transparent;
+        border-bottom: none;
+    }
+    .block-link:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .13);
+        border: none !important;
+        /*border-left: 3px solid #f76d2b !important;*/
+        transition: all .25s;
+    }
+    .nav-a-click {
+        border-bottom: 1px solid #f76d2b;
+    }
+    .echat-download:hover {
+        border-bottom: none !important;
+    }
+    .echat-download {
+    padding: 9px 20px !important;
+    color: #fff !important;
+    background: #e94620;
+    border-radius: 3px;
+    font-weight: normal;
+    width: 40px !important;
+    }
+    .echat-download+.echat-download {
+       padding: 0 22px;
+    color: #fff;
+    height: 34px;
+    line-height: 3px;
+    margin-top: 3px;
+    background: #304DD9!important;
+    border: none;
+    }
+    .column-container {
+        width: 70%;
+        overflow: hidden;
+        position: relative;
+    }
+    .column2 {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+    }
+    .column2-show {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transition: transform 0.3s;
+        -webkit-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+    }
+    /* .column2+.column2 {
+        display: none;
+    } */
+    .block-link-show {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .13);
+        border: none !important;
+        border-left: 3px solid #f76d2b !important;
+        transition: all .25s;
+    }
+    .column2 .column .block-link {
+        /* height: 75px; */
+        padding: 15px 15px 10px !important;
+        background: #fff;
+    }
+    .column2 .column .block-link:hover {
+        background: #fafafa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .13);
+    }
+    .column2 .column .block-link:hover .icon-plan {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0 0 6px 0px #eee;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+    }
+    .column2 .column .block-link+.block-link {
+        margin-top: 9px;
+    }
+    .column2 .column .block-link p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .column2 .column .block-link p+p {
+        font-weight: normal;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .echat-banner-div-1 {
+        position: absolute;
+        top: 21.6%;
+        left: 66%;
+        width: 0;
+        height: 50px;
+        overflow: hidden;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+    }
+    .echat-banner-greet {
+        border-radius: 3px;
+        text-align: center;
+        box-shadow: 0 0 5px 5px #eee;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* top: 21.6%;
+        left: 66%; */
+        background-color: #fff;
+        width: 160px;
+        line-height: 35px;
+        height: 35px;
+        /* overflow-y: hidden;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s; */
+    }
+    .echat-banner-div-1-show {
+        width: 160px;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+    }
+    .echat-banner-triangle {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 8px solid #fff;
+        border-bottom: 4px solid transparent;
+        border-left: 12px solid transparent;
+        top: 0;
+        left: -12px;
+    }
+    .echat-banner-greet1 {
+        width: 34px;
+        height: 56px;
+        position: absolute;
+        right: 22.3%;
+        top: 41.87%;
+        transform: translate(50%, -106%);
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+    }
+    .echat-banner-greet1-show {
+        transform: scale(1.2) translate(45%, -103%);
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+    }
+    .echat-banner-div-2 {
+        position: absolute;
+        top: 61%;
+        right: 26.8%;
+        height: 50px;
+        width: 0;
+        overflow: hidden;
+    }
+    .echat-banner-div-2-show {
+        width: 110px;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+    }
+    .echat-banner-greet2 {
+        /* padding: 0 10px; */
+        border-radius: 3px;
+        box-shadow: 0 0 5px 5px #eee;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        /* top: 61%;
+        right: 27.8%; */
+        background-color: #f76d2b;
+        width: 100px;
+        line-height: 35px;
+        height: 35px;
+        color: #fff;
+    }
+    .echat-banner-triangle2 {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 8px solid #f76d2b;
+        border-bottom: 4px solid transparent;
+        border-right: 12px solid transparent;
+        top: 0;
+        right: -11px;
+    }
+}
+
+/* 1280屏宽以下 */
+
+@media screen and (max-width:1279px) {
+    .dropdown-wide {
+        position: fixed;
+        width: 100%;
+        left: auto;
+        right: 0;
+        top: 100px;
+        max-width: none;
+        background: #fff;
+        z-index: 999999;
+        padding: 40px;
+        box-sizing: border-box;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .13);
+        transform: scale(0);
+        opacity: 0;
+        transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdownnn-wide {
+        position: fixed;
+        width: 100%;
+        left: auto;
+        right: 0;
+        top: 100px;
+        max-width: none;
+        background: #fff;
+        z-index: 999999;
+        padding: 40px;
+        box-sizing: border-box;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .13);
+        transform: scale(0);
+        opacity: 0;
+        transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdown-show {
+        transform: scale(1.0);
+        opacity: 1.0;
+        transition: transform, opacity 0.3s, 0.2s;
+    }
+    .dropdownnn-show {
+        transform: scale(1.0);
+        opacity: 1.0;
+        transition: transform, opacity 0.3s, 0.2s;
+    }
+    .banner-container {
+        width: 100%;
+    }
+    .dropdown-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        transition: all 0.3s;
+    }
+    .dropdownnn-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        transition: all 0.3s;
+    }
+    .column {
+        width: 30%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    .column2 .column {
+        margin-left: 2%;
+        width: 31%;
+        float: left;
+    }
+    .block-link {
+        display: block;
+        color: #3d5154;
+        width: 100%;
+        /* height: 150px; */
+        background: #fafafa;
+        position: relative;
+        padding: 20px 12px 10px 12px !important;
+        /* border-radius: 3px; */
+        border-left: 3px solid transparent;
+        border-bottom: none;
+    }
+    .block-link:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .13);
+        border: none !important;
+        border-left: 3px solid #f76d2b !important;
+        transition: all .25s;
+    }
+    .nav-a-click {
+        border-bottom: 1px solid #f76d2b;
+    }
+    .echat-download:hover {
+        border-bottom: none !important;
+    }
+    .echat-download {
+        padding: 3px 7px !important;
+        color: #fff !important;
+        background: #e94620;
+        border-radius: 3px;
+        font-weight: normal;
+        width: 40px !important;
+    }
+    .echat-download+.echat-download {
+        padding: 3px 7px !important;
+        color: #fff;
+        background: #f18d0f;
+        margin-left: 5px;
+        border-radius: 3px;
+        font-weight: normal;
+        width: 40px !important;
+    }
+    .column-container {
+        width: 70%;
+        overflow: hidden;
+        position: relative;
+    }
+    .column2 {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+    }
+    .column2-show {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transition: transform 0.3s;
+        -webkit-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+    }
+    /* .column2+.column2 {
+        display: none;
+    } */
+    .block-link-show {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .13);
+        border: none !important;
+        border-left: 3px solid #f76d2b !important;
+        transition: all .25s;
+    }
+    .column2 .column .block-link {
+        /* height: 75px; */
+        padding: 15px 15px 10px !important;
+        background: #fff;
+    }
+    .column2 .column .block-link:hover {
+        background: #fafafa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .13);
+    }
+    .column2 .column .block-link:hover .icon-plan {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0 0 6px 0px #eee;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+    }
+    .column2 .column .block-link+.block-link {
+        margin-top: 9px;
+    }
+    .column2 .column .block-link p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .column2 .column .block-link p+p {
+        font-weight: normal;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .echat-banner-div-1, .echat-banner-greet1, .echat-banner-div-2 {
+        display: none;
+    }
+}
+
+/* 1080屏宽以下 */
+
+@media screen and (max-width:1079px) {}
+
+@media screen and (min-width:1080px) {}
+
+/* 768屏宽以下 */
+
+@media screen and (max-width:768px) {
+    .b-nav {
+        overflow: hidden;
+    }
+    .echat-channel {
+        display: flex;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .echat-channel div {
+        width: 50%;
+        padding: 30px;
+    }
+    .echat-channel div:nth-child(odd) {
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .echat-channel div:nth-child(even) {
+        border-bottom: 1px solid #eee;
+    }
+    .echat-channel div:nth-child(9) {
+        border-bottom: 1px solid transparent;
+    }
+    .echat-channel div:nth-child(10) {
+        border-bottom: 1px solid transparent;
+    }
+    .icon-channel {
+        color: #ccc;
+        background: #fff;
+        font-size: 60px !important;
+        padding: 0;
+    }
+    .echat-play {
+        display: none;
+    }
+    .icon-channel-play {
+        color: #ededed;
+        font-size: 40px !important;
+        background: none;
+    }
+    .icon-channel-mini {
+        font-size: 12px !important;
+        color: #ededed;
+        background: none;
+    }
+    .echat-img-mini {
+        display: none;
+    }
+    /* 渠道title */
+    .b-search__main-title h2:nth-child(1) {
+        display: none;
+    }
+    .b-search__main-title h2:nth-child(2) {
+        display: block;
+    }
+    /* 顶部banner手机端时，去掉了解更多标签 */
+    .btn.btn-banner {
+        display: none !important;
+    }
+    .btn-banner-p {
+        display: block;
+    }
+    .btn-banner-c {
+        display: none;
+    }
+    .echat-top-banner {
+        padding-top: 42%;
+    }
+    .echat-top-banner>img {
+        display: none !important;
+    }
+    /* 手机 */
+    .dropdown-wide {
+        position: fixed;
+        width: 100%;
+        left: auto;
+        right: 0;
+        top: 100px;
+        /* width: 118%; */
+        max-width: none;
+    }
+    .b-nav .row>div {
+        width: 100%;
+        text-align: center;
+    }
+    .b-nav__list {
+        display: none;
+    }
+    .echat-login {
+        display: none;
+    }
+    .echat-banner {
+        margin-top: 0;
+    }
+    .b-nav__logo {
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    .echat-target {
+        display: block;
+        color: #888;
+        margin-top: 10px;
+    }
+    .echat-sanjiao-top {
+        position: absolute;
+        top: 22px;
+        right: 19px;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(-45deg);
+    }
+    .echat-sanjiao-down {
+        transform: rotate(135deg);
+    }
+    .product-phone {
+        overflow: hidden;
+        list-style: none;
+        padding: 8px 0;
+        border-bottom: 1px solid #515560;
+        font-size: 0;
+    }
+    .product-phone-close {
+        height: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+    .product-phone-close a {
+        border-bottom: 0;
+    }
+    .product-phone li {
+        width: 50%;
+        text-align: left;
+        padding-left: 20px;
+        line-height: 35px !important;
+        color: #888;
+        float: left;
+        /* display: inline-block; */
+        border: none !important;
+    }
+    .product-phone li a {
+        color: #c8c9cc !important;
+        text-decoration: none;
+        padding-left: 5px;
+        font-size: 12px;
+        display: inline-block;
+        width: 100%;
+    }
+    .echat-mini-span {
+        padding: 1px 5px;
+        background: #f13510;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    .echat-b-contact {
+        display: none;
+    }
+    /* 手机右侧在线客服打开方式 */
+    .echat-b-contact-phone {
+        position: fixed;
+        right: 10px;
+        bottom: 100px;
+        width: 40px;
+        height: 124px;
+        background: #fff;
+        white-space: pre-wrap;
+        z-index: 100001;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .15);
+        color: #f76d2b;
+        text-align: center;
+        font-size: 0;
+        padding: 5px 0 5px 0;
+        cursor: pointer;
+        line-height: 14px;
+    }
+    .echat-b-contact-phone span:last-child {
+        font-size: 12px;
+        margin-top: 5px;
+        line-height: 14px;
+    }
+}
+
+.echat-nav-bar .echat-icon-bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    border-radius: 1px;
+    margin-top: 4px;
+    background-color: #f76d2b;
+    margin: 4px auto;
+}
+
+.echat-phone-menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    z-index: 9999999;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+}
+
+.echat-phone-menu-show {
+    left: 20%;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+}
+
+.menu-motai {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    z-index: 555555;
+}
+
+.menu-content {
+    position: relative;
+    left: 80%;
+    width: 100%;
+    background: #2c3242;
+    opacity: 1.0;
+    height: 100%;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+}
+
+.echat-phone-menu-show .menu-content {
+    left: 0;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+}
+
+.menu-top {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #a4a4a4;
+    /* background: #f76d2b; */
+}
+
+.menu-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.menu-close-i {
+    position: absolute;
+    top: 19px;
+    left: 12px;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.menu-close-i:first-child {
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+}
+
+.menu-close-i:last-child {
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+}
+
+.navbar-nav-menu-phone {
+    list-style: none;
+    padding: 0;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.navbar-nav-menu-phone>li {
+    line-height: 50px;
+    /* height: 40px; */
+    position: relative;
+}
+
+.navbar-nav-menu-phone>li>a {
+    color: #fff;
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    padding: 0 15px;
+    border-bottom: 1px solid #515560;
+}
+
+.echat-language {
+    list-style: none;
+    overflow: hidden;
+    color: #747474;
+    float: right;
+    font-size: 13px !important;
+    margin: 0;
+}
+
+.echat-language li {
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.echat-language li a {
+    color: #747474;
+    text-decoration: none;
+}
+
+.echat-product {
+    position: fixed;
+    left: 0;
+    top: 71px;
+    width: 100%;
+    background: #fff;
+    z-index: 9999999;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.show-product {
+    border-top: 1px solid #eee;
+    height: 350px;
+    transition: height 0.5s;
+    box-shadow: 0 5px 5px -2px rgb(0, 0, 0, 0.12);
+}
+
+.product-list {
+    width: 20%;
+    float: left;
+    height: 100px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+}
+
+.product-list span {
+    font-size: 14px;
+    color: #000;
+}
+
+.product-list a:hover span {
+    color: #f18d1e;
+}
+
+.product-list a {
+    text-decoration: none;
+}
+
+.product-list p {
+    color: #888;
+}
+
+.title-span {
+    line-height: 18px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.title-span>span {
+    font-weight: normal;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.brief-introduction {
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.echat-b-auto-list {
+    width: 100%;
+    height: 88px;
+    position: relative;
+}
+
+.echat-b-auto-gray {
+    width: 78px;
+    height: 78px;
+    background: #4a4442;
+    opacity: 0.65;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.echat-b-auto-orange {
+    width: 78px;
+    height: 78px;
+    background: #f76d2b;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-37%);
+    z-index: 20;
+    line-height: 78px;
+    text-align: center;
+}
+
+.echat-main-a {
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+
+.echat-main-a:hover {
+    text-decoration: none;
+    color: #323232;
+}
+
+.echat-main-a:focus {
+    text-decoration: none;
+    color: #323232;
+}
+
+.echat-main-a dl {
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.echat-main-a dt {
+    font: 800 12px 'Open Sans', sans-serif;
+}
+
+.echat-main-a dd {
+    color: #888;
+    padding-top: 10px;
+    font: 400 10px 'Open Sans', sans-serif;
+}
+
+.echat-bottom-nav a {
+    color: #999;
+}
+
+/* 短信弹窗验证样式 */
+
+.varify-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.verify-motai {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.varify-box {
+    width: 280px;
+    padding: 40px 30px 20px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.varify-item {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.varify-item>div>span {
+    display: inline-block;
+    width: 48px;
+    vertical-align: middle;
+    text-align: justify;
+    color: #888888;
+}
+
+.varify-mobile {
+    width: calc(100% - 52px);
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    outline: none;
+}
+
+.code-box {
+    display: inline-block;
+    width: calc(100% - 52px);
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 26px;
+}
+
+.code-box input {
+    width: calc(100% - 70px);
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 12px;
+    color: inherit;
+}
+
+.code-box>span {
+    font-size: 12px;
+    font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+    font-weight: 400;
+    text-align: right;
+    color: #ffa726;
+    line-height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 60px;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.varify-item>p {
+    height: 20px;
+    text-align: right;
+    color: red;
+    user-select: none;
+    margin-bottom: 0;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.tip-msg {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 13px 0px rgba(28, 9, 0, 0.12);
+    padding: 14px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.tip-msg>img {
+    vertical-align: middle;
+}
+
+.tip-msg span {
+    margin-left: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.close-icon::before {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.close-icon::after {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    position: absolute;
+    transform: rotate(135deg);
+}
+
+.verify-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.verify-btn button {
+    width: 80px;
+    height: 32px;
+    background-color: #ffa726;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+}
+
+.sc-content {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sc-bar {
+    width: 8px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sc-slider {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 4px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.ckbox {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #ffa726;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.ckbox[type='checkbox']:hover {
+    border: 1px solid #ffa726;
+}
+
+.ckbox:checked {
+    color: #fff;
+    background-color: #ffa726;
+    border: 1px solid #ffa726;
+}
+
+.ckbox:after {
+    content: '\2713';
+    font-size: 10px;
+}
