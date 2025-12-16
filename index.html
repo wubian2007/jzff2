@@ -1206,12 +1206,13 @@ padding: 15px 0;
     .ym_nav_nav_right .ym_nav_nav_right_button2{
     color: #2919b1 !important;
 }
-    /* 隐藏有问题的移动端菜单项 */
-    .navbar-nav-menu-phone li[data-tag="show"] {
+    /* 隐藏整个移动端菜单，不影响PC端头部 */
+    .echat-phone-menu,
+    .menu-motai {
         display: none !important;
     }
-    /* 隐藏移动端菜单顶部多余内容，不影响PC端头部 */
-    .echat-phone-menu .menu-top {
+    /* 隐藏有问题的移动端菜单项 */
+    .navbar-nav-menu-phone li[data-tag="show"] {
         display: none !important;
     }
 </style>
