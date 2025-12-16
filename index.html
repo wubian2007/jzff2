@@ -1728,12 +1728,12 @@ padding: 15px 0;
             box-sizing: border-box !important;
         }
         
-        /* 特性区域优化 */
+        /* 特性区域优化 - 移动端简化 */
         .features {
             width: 100% !important;
             max-width: 100% !important;
             height: auto !important;
-            padding: 30px 15px !important;
+            padding: 25px 15px !important;
             background-size: cover !important;
             box-sizing: border-box !important;
         }
@@ -1750,6 +1750,10 @@ padding: 15px 0;
         .features_content_sec {
             width: 100% !important;
             margin-bottom: 15px !important;
+        }
+        /* 移动端只显示前4个特性 */
+        .features_content_sec:nth-child(n+5) {
+            display: none !important;
         }
         
         /* 统计数据区域优化 */
