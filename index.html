@@ -1217,6 +1217,97 @@ padding: 15px 0;
     .navbar-nav-menu-phone li[data-tag="show"] {
         display: none !important;
     }
+    
+    /* 移动端响应式优化 */
+    @media (max-width: 768px) {
+        body {
+            min-width: auto !important;
+        }
+        .container,
+        .head-in,
+        .ftz_vip-in,
+        .serviceClass,
+        .templateAll,
+        .focus > div,
+        .solution .solution_in,
+        .features .features_in {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 15px !important;
+        }
+        .ym_header_left_logo img {
+            width: 120px !important;
+            margin-left: 0 !important;
+        }
+        .ym_header_right_nav {
+            min-width: auto !important;
+            width: auto !important;
+        }
+        .ym_nav_nav_left ul {
+            flex-wrap: wrap !important;
+        }
+        .banner-word {
+            margin-top: 50px !important;
+            padding-top: 10px !important;
+        }
+        .banner-word-1st {
+            font-size: 20px !important;
+        }
+        .serviceClass {
+            width: 100% !important;
+        }
+        .serviceClass li {
+            width: 48% !important;
+            margin: 5px 1% !important;
+        }
+        .focus-main ul {
+            flex-wrap: wrap !important;
+        }
+        .focus-main ul li {
+            width: 50% !important;
+            padding: 10px !important;
+        }
+        .focus-main ul li img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .focus-main ul li h3 {
+            font-size: 14px !important;
+        }
+        .focus-main ul li p {
+            font-size: 12px !important;
+        }
+        .foot-in {
+            padding: 15px !important;
+            font-size: 12px !important;
+        }
+        .foot-in div {
+            flex-direction: column !important;
+            gap: 8px !important;
+        }
+        .help {
+            padding: 20px 15px !important;
+        }
+        .help-content {
+            flex-direction: column !important;
+        }
+        .help-right-item {
+            margin-bottom: 20px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .serviceClass li {
+            width: 100% !important;
+            margin: 5px 0 !important;
+        }
+        .focus-main ul li {
+            width: 100% !important;
+        }
+        .banner-word-1st {
+            font-size: 18px !important;
+        }
+    }
 </style>
 
 
