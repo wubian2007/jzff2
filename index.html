@@ -1229,17 +1229,57 @@ padding: 15px 0;
         /* PC端导航在移动端隐藏 */
         #ym_header_nav_list,
         .ym_nav_center,
-        .ym_header_right_nav {
+        .ym_header_right_nav,
+        .collapse.navbar-collapse {
             display: none !important;
         }
         
-        /* 移动端显示菜单 */
-        .echat-phone-menu,
-        .menu-motai {
+        /* 移动端显示菜单按钮 */
+        .navbar-header.echat-nav-bar {
+            display: block !important;
+            position: fixed !important;
+            top: 10px !important;
+            right: 15px !important;
+            z-index: 10000 !important;
+            background: #f76d2b !important;
+            border-radius: 4px !important;
+            cursor: pointer !important;
+        }
+        .navbar-header.echat-nav-bar .iconfontt {
+            display: block !important;
+            line-height: 40px !important;
+            text-align: center !important;
+        }
+        
+        /* 移动端菜单初始隐藏，点击后显示 */
+        .echat-phone-menu {
+            display: none !important;
+        }
+        .echat-phone-menu.echat-phone-menu-show,
+        .echat-phone-menu.show {
             display: block !important;
         }
         .echat-phone-menu .menu-top {
             display: flex !important;
+        }
+        .menu-motai {
+            display: none !important;
+        }
+        .echat-phone-menu.echat-phone-menu-show ~ .menu-motai,
+        .echat-phone-menu.show ~ .menu-motai {
+            display: block !important;
+        }
+        
+        /* 移动端Logo和头部优化 */
+        .ym_header_left_logo {
+            position: fixed !important;
+            top: 10px !important;
+            left: 15px !important;
+            z-index: 10000 !important;
+        }
+        .ym_header_left_logo img {
+            width: 100px !important;
+            height: auto !important;
         }
         
         /* 所有固定宽度容器自适应 */
@@ -1495,7 +1535,9 @@ padding: 15px 0;
 <!--手机导航-->
 
 <!--PC导航-->
-
+<div class="navbar-header echat-nav-bar" style="display: none;">
+    <span class="iconfontt">☰</span>
+</div>
 <div class="collapse navbar-collapse navbar-main-slide" id="nav">
 <div id="ym_header_nav_list">
     <div class="ym_nav_center">
@@ -2148,19 +2190,38 @@ function topFunction() {
   
 <script src="js/vendor/jquery.min.js"></script>
 <script>
-    // 移动端菜单控制函数
+    // 移动端菜单控制函数（与top.js保持一致）
     function CloseMenu() {
-        $('.echat-phone-menu').removeClass('show');
-        $('.menu-motai').fadeOut();
+        $('.echat-phone-menu').removeClass('echat-phone-menu-show').removeClass('show');
+        $('.menu-motai').hide();
+        if (typeof stopBodyScroll === 'function') {
+            stopBodyScroll(false);
+        }
     }
     function OpenMenu() {
-        $('.echat-phone-menu').addClass('show');
-        $('.menu-motai').fadeIn();
+        $('.echat-phone-menu').addClass('echat-phone-menu-show').addClass('show');
+        $('.menu-motai').show();
+        if (typeof stopBodyScroll === 'function') {
+            stopBodyScroll(true);
+        }
     }
     
     $(function(){
+        // 移动端菜单按钮点击事件
+        $('.echat-nav-bar').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            OpenMenu();
+            return false;
+        });
+        
         // 移动端菜单点击事件
         $('.menu-motai').on('click', function() {
+            CloseMenu();
+        });
+        
+        // 移动端菜单关闭按钮
+        $('.menu-close').on('click', function() {
             CloseMenu();
         });
         
