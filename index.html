@@ -1220,11 +1220,19 @@ padding: 15px 0;
         display: none !important;
     }
     
-    /* 移动端响应式优化 */
+    /* 移动端响应式优化 - 参考目标站点 */
     @media (max-width: 768px) {
         body {
             min-width: auto !important;
         }
+        
+        /* PC端导航在移动端隐藏 */
+        #ym_header_nav_list,
+        .ym_nav_center,
+        .ym_header_right_nav {
+            display: none !important;
+        }
+        
         /* 移动端显示菜单 */
         .echat-phone-menu,
         .menu-motai {
@@ -1233,68 +1241,121 @@ padding: 15px 0;
         .echat-phone-menu .menu-top {
             display: flex !important;
         }
+        
+        /* 所有固定宽度容器自适应 */
         .container,
         .head-in,
         .ftz_vip-in,
         .serviceClass,
         .templateAll,
-        .focus > div,
+        .focus > div[style*="1100px"],
+        .focus > div[style*="width: 1100px"],
         .solution .solution_in,
-        .features .features_in {
+        .features .features_in,
+        .ym_all_web_header,
+        #ym_all_wab,
+        .sy_tab_content_sycj,
+        .top_cooperationone,
+        .top_cooperationtwo {
             width: 100% !important;
             max-width: 100% !important;
             padding: 0 15px !important;
+            box-sizing: border-box !important;
         }
-        .ym_header_left_logo img {
-            width: 120px !important;
-            margin-left: 0 !important;
-        }
-        .ym_header_right_nav {
-            min-width: auto !important;
-            width: auto !important;
-        }
-        .ym_nav_nav_left ul {
-            flex-wrap: wrap !important;
-        }
+        
+        /* Banner区域优化 */
         .banner-word {
-            margin-top: 50px !important;
+            margin-top: 30px !important;
             padding-top: 10px !important;
         }
         .banner-word-1st {
             font-size: 20px !important;
+            padding: 10px 15px !important;
         }
+        .cf .swiper-slide {
+            background-size: cover !important;
+            height: 300px !important;
+        }
+        
+        /* 服务卡片优化 */
         .serviceClass {
             width: 100% !important;
+            padding: 0 10px !important;
         }
         .serviceClass li {
             width: 48% !important;
             margin: 5px 1% !important;
+            height: auto !important;
+            min-height: 250px !important;
         }
+        .serviceClass img {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        .serviceClass .title h5 {
+            font-size: 16px !important;
+        }
+        .serviceClass .title p {
+            font-size: 12px !important;
+        }
+        .serviceClass button {
+            width: 90% !important;
+            font-size: 12px !important;
+        }
+        
+        /* 功能特性区域优化 */
         .focus-main ul {
             flex-wrap: wrap !important;
+            padding: 0 10px !important;
         }
         .focus-main ul li {
             width: 50% !important;
-            padding: 10px !important;
+            padding: 15px 10px !important;
+            box-sizing: border-box !important;
         }
         .focus-main ul li img {
             width: 60px !important;
             height: 60px !important;
+            margin-bottom: 10px !important;
         }
         .focus-main ul li h3 {
             font-size: 14px !important;
+            margin-bottom: 8px !important;
         }
         .focus-main ul li p {
             font-size: 12px !important;
+            line-height: 1.5 !important;
+        }
+        
+        /* 标题优化 */
+        .focus-title .main-t,
+        .ym_all_web_header .ym_all_web_header_msg h1,
+        .solution .solution_in .solution_title h1 {
+            font-size: 24px !important;
+        }
+        .focus-title .sub-title {
+            font-size: 14px !important;
+        }
+        
+        /* 底部优化 */
+        .foot {
+            padding: 20px 15px !important;
         }
         .foot-in {
-            padding: 15px !important;
+            padding: 10px 0 !important;
             font-size: 12px !important;
+            text-align: center !important;
         }
         .foot-in div {
             flex-direction: column !important;
             gap: 8px !important;
+            align-items: center !important;
         }
+        .foot-in img {
+            margin: 0 auto 5px !important;
+        }
+        
+        /* 帮助中心优化 */
         .help {
             padding: 20px 15px !important;
         }
@@ -1303,19 +1364,58 @@ padding: 15px 0;
         }
         .help-right-item {
             margin-bottom: 20px !important;
+            width: 100% !important;
+        }
+        
+        /* 统计数据优化 */
+        .index-cumulative {
+            flex-direction: column !important;
+            gap: 20px !important;
+        }
+        .index-cumulative .num {
+            font-size: 40px !important;
+        }
+        .index-cumulative .text {
+            font-size: 14px !important;
+        }
+        
+        /* 轮播导航优化 */
+        .banner_nav {
+            width: 100% !important;
+            left: 0 !important;
+            padding: 0 15px !important;
+        }
+        .banner_nav ul {
+            position: relative !important;
+            bottom: auto !important;
+            right: auto !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+        }
+        .banner_nav ul li {
+            margin: 5px !important;
+            font-size: 12px !important;
+            padding: 5px 10px !important;
         }
     }
     
     @media (max-width: 480px) {
         .serviceClass li {
             width: 100% !important;
-            margin: 5px 0 !important;
+            margin: 10px 0 !important;
         }
         .focus-main ul li {
             width: 100% !important;
         }
         .banner-word-1st {
             font-size: 18px !important;
+        }
+        .focus-title .main-t {
+            font-size: 20px !important;
+        }
+        .serviceClass img {
+            width: 60px !important;
+            height: 60px !important;
         }
     }
 </style>
