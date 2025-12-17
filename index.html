@@ -1986,7 +1986,7 @@ padding: 15px 0;
 
 <link rel="stylesheet" href="css/vendor/echatWeb.css">
 <link rel="stylesheet" href="css/vendor/drop.css">
-<link rel="stylesheet" href="https://www.appzhu.cn/xinmoban/xd/font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- font-awesome(外链) 会在 GitHub Pages 上触发字体 CORS，且本项目仅用到下拉小箭头，已改为纯文本符号 -->
 <!----手机导航---->
 <header>
     
@@ -2073,7 +2073,7 @@ padding: 15px 0;
                     <a href="" style="width: 100%; opacity: 1;"  data-link></a></li>
                     
                     <li class="nav_left_button product"  style="position: relative"  >
-                        <a class="delDefaultAStyleAll" data-link>内测产品<i class="fa fa-caret-down" style="margin-left: 3px;"></i></a>
+                        <a class="delDefaultAStyleAll" data-link>内测产品<span aria-hidden="true" style="margin-left: 3px; font-size: 12px; line-height: 1; display: inline-block; transform: translateY(-1px);">▼</span></a>
                                                 <div class="solution_card_V">
                             <div class="solution_card_box">
                                 <div style="width: 1140px;margin: 0 auto">
@@ -2161,7 +2161,7 @@ padding: 15px 0;
 
          <li class="nav_left_button"><a class="delDefaultAStyleAll" href="/index/price" data-link>价格套餐</a> </li>
                     <li class="nav_left_button jiejue1"  style="position: relative"  >
-                        <a class="delDefaultAStyleAll" data-link>开发者工具<i class="fa fa-caret-down" style="margin-left: 3px;"></i></a>
+                        <a class="delDefaultAStyleAll" data-link>开发者工具<span aria-hidden="true" style="margin-left: 3px; font-size: 12px; line-height: 1; display: inline-block; transform: translateY(-1px);">▼</span></a>
                        </a>
                         <div class="solution_card1">
                             <div class="items" style="width:500px">
@@ -2218,8 +2218,6 @@ padding: 15px 0;
     </div>
 </div>
 </div>
-<script type="text/javascript" src="js/vendor/top.js"></script>
-
 </header>
 <div id="allBody">
 <div class="swiper-container" style="">
@@ -2601,6 +2599,8 @@ padding: 15px 0;
     </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="回顶部" data-link>返回顶部</button>
+<script src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendor/top.js"></script>
 <script src="js/vendor/clipboard.min.js"></script>
 <script language=javascript> 
 function openScript(url, width, height) {
@@ -2627,11 +2627,12 @@ function topFunction() {
 }
 </script>
 <script>
-    if (!isHideFooter) {
+    window.isHideFooter = !!window.isHideFooter;
+    if (!window.isHideFooter) {
         $('.right-float-window').show();
     }
 
-    $(function () {
+    if (typeof window.jQuery !== 'undefined') $(function () {
         $("body").on('click', '.fail-pay', function () {
             $(".pay-money a:last").removeClass("disabled");
             $(".pay-money a:last").addClass("toPay");
@@ -2713,7 +2714,6 @@ function topFunction() {
     }
 </script>
   
-<script src="js/vendor/jquery.min.js"></script>
 <script>
     // 移动端菜单控制函数（与top.js保持一致）
     function CloseMenu() {
