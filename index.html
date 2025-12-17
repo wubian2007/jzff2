@@ -2075,7 +2075,20 @@ padding: 15px 0;
 <div class="collapse navbar-collapse navbar-main-slide" id="nav">
 <div id="ym_header_nav_list">
     <div class="ym_nav_center">
-        <div class="ym_header_left_logo" onclick="location.href='/'"><img  style="margin-left:-13px;width: 160px; vertical-align: middle" src="assets/logo.png" alt="桔子分发">
+        <div class="ym_header_left_logo" onclick="location.href='/'">
+            <!--
+              Logo 变色(滚动切换)说明：
+              - data-logo-light: 顶部(深色/透明背景)使用的 Logo（一般是白色字）
+              - data-logo-dark:  滚动后 navtop(浅色背景)使用的 Logo（一般是黑色字）
+              你只需要把黑色字 Logo 放到 assets/logo_black.png（或改下面路径）即可生效。
+            -->
+            <img
+              id="siteLogo"
+              style="margin-left:-13px;width: 160px; vertical-align: middle"
+              src="assets/logo.png"
+              data-logo-light="assets/logo.png"
+              data-logo-dark="assets/logo_black.png"
+              alt="桔子分发">
         </div>
         <div class="ym_header_right_nav">
             <div class="ym_nav_nav_left">
@@ -2761,16 +2774,35 @@ function topFunction() {
             CloseMenu();
         });
         
-        $(window).scroll(function(){
-            if($(document).scrollTop() > 0){
-                $('#ym_header_nav_list').addClass('navtop')
-                $('.ym_header_left_logo img').attr('src','assets/logo.png')
-            }else {
-                $('#ym_header_nav_list').removeClass('navtop')
-                $('.ym_header_left_logo img').attr('src','assets/logo.png')
+        // PC 顶部导航：滚动时切换背景(navtop)并切换 Logo（白字 <-> 黑字）
+        (function initScrollLogoSwap() {
+            var $logo = $('#siteLogo');
+            if (!$logo.length) return;
+
+            var lightSrc = $logo.data('logoLight') || $logo.attr('src');
+            var darkSrc = $logo.data('logoDark');
+            var hasDark = false;
+
+            // 预加载 darkSrc，避免文件不存在时出现破图
+            if (darkSrc) {
+                var pre = new Image();
+                pre.onload = function () { hasDark = true; };
+                pre.onerror = function () { hasDark = false; };
+                pre.src = darkSrc;
             }
 
-        })
+            function applyNavState() {
+                var scrolled = $(document).scrollTop() > 0;
+                $('#ym_header_nav_list').toggleClass('navtop', scrolled);
+
+                // 有 dark logo 才切换，否则保持 light，避免破图
+                var nextSrc = (scrolled && hasDark) ? darkSrc : lightSrc;
+                if (nextSrc && $logo.attr('src') !== nextSrc) $logo.attr('src', nextSrc);
+            }
+
+            $(window).on('scroll', applyNavState);
+            applyNavState(); // 首次进入也同步一次状态
+        })();
     })
     $('.jiejue').hover(function () {
         $('.solution_card_V').css({'display':'block'})
