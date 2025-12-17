@@ -1121,6 +1121,32 @@ padding: 15px 0;
         box-shadow: 0px 10px 10px rgba(0,0,0,.02);
         top: 0px;
     }
+    /* 顶部导航 Logo：对齐源站滚动变色效果
+       - 优先使用两张图切换（assets/logo.png + assets/logo_black.png）
+       - 若未提供 logo_black.png，则 navtop 状态使用纯文字“桔子分发”作为兜底（避免破图） */
+    .ym_header_left_logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .ym_header_left_logo .site-logo-text{
+        display: none;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1;
+    }
+    #ym_header_nav_list.navtop .ym_header_left_logo:not(.has-dark-logo) #siteLogo{
+        display: none;
+    }
+    #ym_header_nav_list.navtop .ym_header_left_logo:not(.has-dark-logo) .site-logo-text{
+        display: inline-block;
+        color: #333333;
+    }
+    #ym_header_nav_list.navtop .ym_header_left_logo.has-dark-logo .site-logo-text{
+        display: none;
+    }
     .navtop .ym_nav_nav_left li{
         color: #333333 !important;
     }
@@ -2089,6 +2115,7 @@ padding: 15px 0;
               data-logo-light="assets/logo.png"
               data-logo-dark="assets/logo_black.png"
               alt="桔子分发">
+            <span class="site-logo-text">桔子分发</span>
         </div>
         <div class="ym_header_right_nav">
             <div class="ym_nav_nav_left">
@@ -2782,12 +2809,22 @@ function topFunction() {
             var lightSrc = $logo.data('logoLight') || $logo.attr('src');
             var darkSrc = $logo.data('logoDark');
             var hasDark = false;
+            var $logoWrap = $logo.closest('.ym_header_left_logo');
+            if ($logoWrap.length) $logoWrap.removeClass('has-dark-logo');
 
             // 预加载 darkSrc，避免文件不存在时出现破图
             if (darkSrc) {
                 var pre = new Image();
-                pre.onload = function () { hasDark = true; };
-                pre.onerror = function () { hasDark = false; };
+                pre.onload = function () {
+                    hasDark = true;
+                    if ($logoWrap.length) $logoWrap.addClass('has-dark-logo');
+                    applyNavState();
+                };
+                pre.onerror = function () {
+                    hasDark = false;
+                    if ($logoWrap.length) $logoWrap.removeClass('has-dark-logo');
+                    applyNavState();
+                };
                 pre.src = darkSrc;
             }
 
